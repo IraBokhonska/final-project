@@ -1,0 +1,24 @@
+.button {
+  padding: 18px 20px;
+  width: max-content;
+
+  font-family: PT Sans;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &_type-primary {
+    background-color: #c09a64;
+  }
+
+  &_type-secondary {
+    background-color: transparent;
+    border: 1px solid #6c6c6c;
+  }
+}
