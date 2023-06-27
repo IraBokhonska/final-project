@@ -4,6 +4,8 @@
 import Home from "../../containers/Home";
 import AboutUs from "../../containers/AboutUs";
 import Banner from "../../containers/Banner";
+import WhyUs from "../../containers/WhyUs";
+import Collaboration from "../../containers/Collaboration";
 
 import bannerHome from "../../assets/images/containers/banners/banner-4.jpg";
 
@@ -18,6 +20,8 @@ function HomePage() {
         US."
         image={bannerHome}
       />
+      <WhyUs />
+      <Collaboration />
     </div>
   );
 }

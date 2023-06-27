@@ -1,0 +1,49 @@
+.collaboration {
+  &__block {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  &__list {
+    min-width: 400px;
+    min-height: 565px;
+  }
+
+  &__image {
+    max-width: 400px;
+    max-height: 565px;
+  }
+}
+
+.collaboration-card {
+  min-height: 130px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  &__title {
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  // &__text{
+  //   line-height: 27px;g
+  // }
+
+  &__number {
+    color: #c09a64;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 94px;
+  }
+
+  &__content {
+    max-width: 700px;
+  }
+}

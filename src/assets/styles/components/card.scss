@@ -1,0 +1,38 @@
+.card {
+  width: 100%;
+  min-height: 130px;
+  padding: 30px 150px 30px 45px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+
+  font-weight: 700;
+
+  background-color: #1c1c1c;
+
+  &__icon svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    min-width: 160px;
+    white-space: nowrap;
+
+    font-family: Playfair Display, sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  &__text .card-preferences__item {
+    min-width: 200px;
+    line-height: 22px;
+
+    font-weight: 400;
+  }
+}

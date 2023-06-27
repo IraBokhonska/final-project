@@ -4,6 +4,7 @@ import bannerServices from "../../assets/images/containers/banners/banner-servic
 //containers
 import Banner from "../../containers/Banner";
 import Pricing from "../../containers/Pricing";
+import Services from "../../containers/Services";
 
 function ServicesPage() {
   return (
@@ -13,6 +14,7 @@ function ServicesPage() {
         description="CONTACT US NOW AND GET A 10% DISCOUNT FOR THE NEXT FASHION PHOTOSHOOT."
         image={bannerServices}
       />
+      <Services />
       <Pricing />
     </div>
   );
