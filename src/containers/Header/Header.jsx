@@ -26,7 +26,7 @@ function Header() {
             <Link
               key={`${index}-${link.label}`}
               to={link.value}
-              className="header__navigation__link"
+              className="header__link"
             >
               {link.label}
             </Link>

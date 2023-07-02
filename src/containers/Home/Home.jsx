@@ -8,7 +8,9 @@ import Button from "../../elements/Button";
 function Home() {
   return (
     <section className="home">
-      <img src={homeImage} alt="img" className="home__image" />
+      <div className="home__image">
+        <img src={homeImage} alt="img" className="bg-image" />
+      </div>
       <div className="home__block">
         <p className="home__studio">studio</p>
         <h1 className="home__title">Just a Moment</h1>

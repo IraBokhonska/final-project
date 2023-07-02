@@ -1,41 +1,36 @@
 .header {
   width: 100%;
-  min-height: 746px;
-  position: relative;
+  min-height: 100px;
 
   &__container {
-    padding: 34px 70px 0;
+    padding: 50px 70px;
     color: #fff;
     opacity: 0.8;
-
-    position: relative;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-
-    padding-bottom: 19px;
   }
 
   &__navigation {
-    padding: 38px 0;
-
-    // border-top: 1px solid #323334;
-    // border-bottom: 1px solid #323334;
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 69px;
+  }
 
-    &__link {
-      font-family: Caveat, cursive;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 30px;
-      color: #fff;
+  &__link {
+    font-family: Caveat, cursive;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    &:hover {
+      color: #c09a64;
+      transition: 0.3s;
     }
   }
 }
@@ -83,4 +78,9 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
+
+  &:hover {
+    color: #c09a64;
+    transition: 0.3s;
+  }
 }

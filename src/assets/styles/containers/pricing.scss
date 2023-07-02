@@ -68,6 +68,11 @@
     line-height: 14px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
+
+    &:hover {
+      transition: 0.3s;
+      color: #c09a64;
+    }
   }
 }
 

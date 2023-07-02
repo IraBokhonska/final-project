@@ -16,10 +16,19 @@
 
   &_type-primary {
     background-color: #c09a64;
+    opacity: 0.8;
+    &:hover {
+      transition: 0.3s;
+      opacity: 1;
+    }
   }
 
   &_type-secondary {
     background-color: transparent;
     border: 1px solid #6c6c6c;
+    &:hover {
+      transition: 0.3s;
+      background-color: #c09a64;
+    }
   }
 }
