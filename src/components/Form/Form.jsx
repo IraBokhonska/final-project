@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 //assets
 import "../../assets/styles/components/form.scss";
@@ -8,6 +9,8 @@ import "../../assets/styles/components/form.scss";
 // import Button from "../../elements/Button";
 
 function Form() {
+  const [showModal, setShowModal] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -16,9 +19,15 @@ function Form() {
   } = useForm({ mode: "onBlur" });
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
+    console.log(JSON.stringify(data));
     reset();
+    setShowModal(true);
   };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="form__block">
       <h2 className="form__title title">Let's start a conversation.</h2>
@@ -87,6 +96,18 @@ function Form() {
           Request a quote
         </button>
       </form>
+      {showModal && (
+        <div className="modal">
+          <div className="modal__content">
+            <button className="modal__close" onClick={closeModal}>
+              &times;
+            </button>
+            <p className="modal__message">
+              Thank you for your inquiry. We will contact you shortly!
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
