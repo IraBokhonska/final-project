@@ -7,7 +7,7 @@ import WhyUs from "../../containers/WhyUs";
 import Collaboration from "../../containers/Collaboration";
 import Portfolio from "../../containers/Portfolio";
 
-import bannerHome from "../../assets/images/containers/banners/banner-4.jpg";
+import bannerHome from "../../assets/images/containers/banners/banner-1.jpg";
 
 function HomePage() {
   return (

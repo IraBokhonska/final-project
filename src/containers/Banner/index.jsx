@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import PropTypes from "prop-types";
 
 // elements
 import Button from "../../elements/Button";
@@ -10,9 +9,22 @@ import "../../assets/styles/containers/banner.scss";
 
 const Banner = ({ title, image, description }) => {
   const navigate = useNavigate();
+  const [isAnimated, setIsAnimated] = useState(true);
+
+  const stopAnimation = () => {
+    setIsAnimated(false);
+  };
+
+  const startAnimation = () => {
+    setIsAnimated(true);
+  };
 
   return (
-    <section className="banner">
+    <section
+      className={`banner ${isAnimated ? "animated" : ""}`}
+      onFocus={stopAnimation}
+      onBlur={startAnimation}
+    >
       <div className="banner__block">
         <h2 className="banner__title title">{title}</h2>
         <div className="divider"></div>
@@ -29,13 +41,5 @@ const Banner = ({ title, image, description }) => {
     </section>
   );
 };
-
-// BannerSell.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   image: PropTypes.string,
-//   price:  PropTypes.number,
-//   description: PropTypes.string,
-//   discount: PropTypes.number,
-// };
 
 export default Banner;

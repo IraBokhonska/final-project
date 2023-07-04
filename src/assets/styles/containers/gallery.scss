@@ -33,6 +33,18 @@
     font-size: 45px;
     line-height: 60px;
     color: #c09a64;
+
+    animation: fadeIn 1s ease-in-out;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 

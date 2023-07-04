@@ -1,6 +1,10 @@
 import Gallery from "../../containers/Gallery";
 
 function GalleryPage() {
-  return <section><Gallery/></section>;
+  return (
+    <>
+      <Gallery />
+    </>
+  );
 }
 export default GalleryPage;

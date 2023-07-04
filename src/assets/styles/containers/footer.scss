@@ -1,22 +1,12 @@
-.mdst-footer {
-  background-color: #323334;
-  padding: 50px 72px 0;
+.footer {
+  width: 100%;
+  background: linear-gradient(0deg, #ffecd1 0%, #c09a64 100%);
+  z-index: -3;
+  margin-top: 50px;
 
-  &__footer {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
-    text-align: center;
-
-    background-color: #222222;
-
-    padding: 18px 0;
+  &__main {
+    padding: 100px 135px;
+    flex-direction: row;
+    justify-content: space-between;
   }
-
-  // v2
-  // @media screen and (max-width: 767px) {
-
-  // }
 }

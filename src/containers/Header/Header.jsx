@@ -5,11 +5,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { IoLogoYoutube, IoMdCamera } from "react-icons/io";
 
+
 // helpers
 import { HEADER_NAVIGATION_LINKS } from "./constans";
 
 // assets
 import "../../assets/styles/containers/header.scss";
+import Form from "../../components/Form";
 
 function Header() {
   return (
@@ -44,6 +46,7 @@ function Header() {
           </span>
         </div>
       </div>
+      <Form />
     </header>
   );
 }

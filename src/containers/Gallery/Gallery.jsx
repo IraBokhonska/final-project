@@ -51,13 +51,11 @@ const Gallery = () => {
     (image) => image.largeImageURL === selectedImage
   );
 
-  // Previous Image
   const prevSlide = () => {
     const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
     setSelectedImage(images[prevIndex].largeImageURL);
   };
 
-  // Next Image
   const nextSlide = () => {
     const nextIndex = (currentIndex + 1) % images.length;
     setSelectedImage(images[nextIndex].largeImageURL);

@@ -1,5 +1,5 @@
 //asserts
-import bannerServices from "../../assets/images/containers/banners/banner-services.jpg";
+import bannerServices from "../../assets/images/containers/banners/banner-2.jpg";
 
 //containers
 import Banner from "../../containers/Banner";
