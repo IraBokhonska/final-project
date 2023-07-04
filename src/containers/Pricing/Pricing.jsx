@@ -13,7 +13,7 @@ import photoFourth from "../../assets/images/containers/pricing/photo4.jpg";
 // import ../../assets/styles/components/weather-card.scss;
 function Pricing() {
   return (
-    <section className="pricing container">
+    <section className="pricing container" id="pricing">
       <h2 className="pricing__title title">Pricing</h2>
       <div className="divider"></div>
       <p className="pricing__subtitle subtitle">

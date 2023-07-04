@@ -1,6 +1,7 @@
 //assets
 import "../../assets/styles/containers/home.scss";
 import homeImage from "../../assets/images/containers/home/home-image.jpg";
+import { Link } from "react-router-dom";
 
 //elements
 import Button from "../../elements/Button";
@@ -18,13 +19,15 @@ function Home() {
         <p className="home__subtitle">
           We capture the most beautiful moments of your life...
         </p>
-        <Button
-          type="secondary"
-          // onClick={() => navigate("/categories")}
-          data-testid="view-details-button"
-        >
-          CONTACT US
-        </Button>
+        <Link>
+          <Button
+            type="secondary"
+            onClick={() => (window.location.href = "#form")}
+            data-testid="view-details-button"
+          >
+            CONTACT US
+          </Button>
+        </Link>
       </div>
     </section>
   );

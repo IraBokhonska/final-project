@@ -8,7 +8,7 @@ import Form from "../../components/Form";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="form">
       <div className="footer__main container">
         <Contacts />
         <Form />

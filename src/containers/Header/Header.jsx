@@ -5,7 +5,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { IoLogoYoutube, IoMdCamera } from "react-icons/io";
 
-
 // helpers
 import { HEADER_NAVIGATION_LINKS } from "./constans";
 
@@ -36,13 +35,19 @@ function Header() {
         </nav>
         <div className="header__socials">
           <span className="header__socials-item">
-            <FaFacebookF />
+            <a href="https://www.facebook.com/">
+              <FaFacebookF />
+            </a>
           </span>
           <span className="header__socials-item">
-            <SlSocialInstagram />
+            <a href="https://www.instagram.com/">
+              <SlSocialInstagram />
+            </a>
           </span>
           <span className="header__socials-item">
-            <IoLogoYoutube />
+            <a href="https://www.youtube.com/">
+              <IoLogoYoutube />
+            </a>
           </span>
         </div>
       </div>

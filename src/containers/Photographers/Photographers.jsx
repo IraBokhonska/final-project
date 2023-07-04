@@ -14,7 +14,7 @@ import Slider from "../../components/Slider";
 
 function Photographers() {
   return (
-    <section className="photographers">
+    <section className="photographers" id="photographers">
       <Slider>
         <SwiperSlide>
           <PhotographerCard

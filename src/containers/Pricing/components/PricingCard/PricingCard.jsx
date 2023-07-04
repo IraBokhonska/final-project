@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // elements
 // import Button from "../../elements/Button";
@@ -8,8 +8,6 @@ import { useNavigate } from "react-router-dom";
 import "../../../../assets/styles/containers/pricing.scss";
 
 const PricingCard = ({ image, name, price = "from $30/hour", description }) => {
-  const navigate = useNavigate();
-
   return (
     <li className="pricing-card">
       <div className="pricing-card__photo">
@@ -21,13 +19,14 @@ const PricingCard = ({ image, name, price = "from $30/hour", description }) => {
           <p className="pricing-card__price">{price}</p>
           <p className="pricing-card__description">{description}</p>
         </div>
-        <p
-          className="pricing-card__learn-more"
-          onClick={() => navigate("/categories")}
-          data-testid="view-details-button"
-        >
-          Learn more
-        </p>
+        <Link>
+          <p
+            className="pricing-card__learn-more"
+            onClick={() => (window.location.href = "#form")}
+          >
+            Learn more
+          </p>
+        </Link>
         {/* <Button
           type="secondary"
           onClick={() => navigate("/categories")}

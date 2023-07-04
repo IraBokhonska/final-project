@@ -4,6 +4,7 @@ import aboutUsImage from "../../assets/images/containers/about-us/about-us-image
 
 //elements
 import Button from "../../elements/Button";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -29,13 +30,14 @@ function AboutUs() {
           Now we are engaged in individual photography and take on commercial
           projects.
         </p>
-        <Button
-          type="primary"
-          // onClick={() => navigate("/categories")}
-          data-testid="view-details-button"
-        >
-          LEARN MORE
-        </Button>
+        <Link>
+          <Button
+            type="primary"
+            onClick={() => (window.location.href = "#photographers")}
+          >
+            LEARN MORE
+          </Button>
+        </Link>
       </div>
     </section>
   );
