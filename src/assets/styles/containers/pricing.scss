@@ -118,7 +118,7 @@
     &__block {
       max-width: 100%;
       min-height: fit-content;
-      padding: 20px 10px 20px 20px;
+      padding: 40px 25px;
 
       justify-content: flex-start;
       gap: 30px;
@@ -130,6 +130,5 @@
   }
 }
 
-@media (max-width: 360px){
-
+@media (max-width: 360px) {
 }

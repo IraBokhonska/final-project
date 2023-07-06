@@ -107,5 +107,9 @@
   .address {
     width: 100%;
     max-width: 570px;
+
+    p {
+      white-space: wrap;
+    }
   }
 }

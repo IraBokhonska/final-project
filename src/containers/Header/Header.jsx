@@ -4,19 +4,20 @@ import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { IoLogoYoutube, IoMdCamera } from "react-icons/io";
 import { HEADER_NAVIGATION_LINKS } from "./constans";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 // assets
 import "../../assets/styles/containers/header.scss";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [nav, setNav] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const toggleNav = () => {
+    setNav(!nav);
   };
 
   return (
-    <header className={`header ${isMenuOpen ? "menu-open" : ""}`}>
+    <header className="header">
       <div className="header__container">
         <div className="header__logo-menu">
           <Link to="/" className="logo">
@@ -25,19 +26,14 @@ function Header() {
             </span>
             <p className="logo-name">Just a moment</p>
           </Link>
-          <div className="menu-icon" onClick={toggleMenu}>
-            <span className="menu-icon__line"></span>
-            <span className="menu-icon__line"></span>
-            <span className="menu-icon__line"></span>
-          </div>
         </div>
-        <nav className={`header__navigation ${isMenuOpen ? "open" : ""}`}>
+        <nav className={`header__navigation ${nav ? "active-menu" : ""}`}>
           {HEADER_NAVIGATION_LINKS.map((link, index) => (
             <Link
               key={`${index}-${link.label}`}
               to={link.value}
               className="header__link"
-              onClick={toggleMenu}
+              onClick={toggleNav}
             >
               {link.label}
             </Link>
@@ -71,6 +67,12 @@ function Header() {
               <IoLogoYoutube />
             </a>
           </span>
+        </div>
+        <div
+          onClick={toggleNav}
+          className={`mobile_btn ${nav ? "active" : ""}`}
+        >
+          {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
         </div>
       </div>
     </header>

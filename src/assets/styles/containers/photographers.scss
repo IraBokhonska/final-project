@@ -120,3 +120,11 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .photographers {
+    &__block {
+      min-height: 680px;
+    }
+  }
+}
