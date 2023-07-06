@@ -10,6 +10,7 @@ import GalleryPage from "./GalleryPage";
 //layouts
 
 import GeneralLayout from "../layouts/GeneralLayout";
+import AdditionalLayout from "../layouts/AdditionalLayout";
 
 const renderWithLayout = (Component, Layout = GeneralLayout) => (
   <Layout>
@@ -21,7 +22,10 @@ const Router = () => (
   <Routes>
     <Route path="/" element={renderWithLayout(HomePage)} />
     <Route path="/services" element={renderWithLayout(ServicesPage)} />
-    <Route path="/gallery" element={renderWithLayout(GalleryPage)} />
+    <Route
+      path="/gallery"
+      element={renderWithLayout(GalleryPage, AdditionalLayout)}
+    />
   </Routes>
 );
 export default Router;

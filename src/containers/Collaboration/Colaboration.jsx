@@ -14,30 +14,13 @@ function Collaboration() {
         LET'S CREATE SOMETHING GREAT AND BEAUTIFUL TOGETHER.
       </p>
       <div className="collaboration__block">
-        <img
-          src={collaborationImage}
-          alt="collaborationImage"
-          className="collaboration__image"
-        />
-        {/* <picture class="picture">
-          <source
-            srcset="./assets/images/header-images/header_desktop.jpg"
-            media="(min-width: 992px)"
-          />
-          <source
-            srcset="./assets/images/header-images/header_tablet.jpg"
-            media="(min-width: 576px)"
-          />
-          <source
-            srcset="./assets/images/header-images/header_mobile.jpg"
-            media="(min-width: 320px)"
-          />
+        <div className="collaboration__image">
           <img
-            class="image"
-            src="./assets/images/header-images/header_mobile.jpg"
-            alt="img"
+            src={collaborationImage}
+            alt="collaborationImage"
+            className="image"
           />
-        </picture> */}
+        </div>
         <ul className="collaboration__list">
           <CollaborationCard
             number="01"

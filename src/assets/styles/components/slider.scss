@@ -29,3 +29,34 @@
 .swiper-button-next {
   right: var(--swiper-navigation-sides-offset, 50px);
 }
+
+@media (max-width: 1400px) {
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 30px);
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}

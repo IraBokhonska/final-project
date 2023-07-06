@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 function AboutUs() {
   return (
     <section className="about-us">
-      <img src={aboutUsImage} alt="img" className="about-us__image" />
+      <div className="about-us__image">
+        <img src={aboutUsImage} alt="img" className="image" />
+      </div>
       <div className="about-us__content">
         <h2 className="about-us__title title">About us</h2>
         <div className="divider"></div>

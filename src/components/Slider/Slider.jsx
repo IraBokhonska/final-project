@@ -3,7 +3,7 @@ import { Navigation, Pagination, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import "../../assets/styles/components/slider.scss";
 
-function Slider({ children, slidesPerView }) {
+function Slider({ children, slidesPerView, breakpoints }) {
   return (
     <Swiper
       modules={[Navigation, Pagination, A11y]}
@@ -15,6 +15,7 @@ function Slider({ children, slidesPerView }) {
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
+      breakpoints={breakpoints}
     >
       {children}
     </Swiper>

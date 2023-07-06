@@ -49,6 +49,7 @@ body {
   font-size: 45px;
   line-height: 59px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .subtitle {
@@ -65,4 +66,38 @@ body {
   color: #b8b8b8;
   font-size: 17px;
   line-height: 29px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 100%;
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__wrapper {
+    gap: 80px;
+  }
+  .container {
+    padding: 0 40px;
+  }
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__wrapper {
+    gap: 50px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .subtitle {
+    margin-bottom: 30px;
+  }
 }

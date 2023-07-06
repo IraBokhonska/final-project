@@ -22,7 +22,7 @@
 
 .form__input,
 .form__button,
-textarea {
+.form__text-area {
   width: 100%;
   width: 440px;
   height: 55px;
@@ -38,14 +38,16 @@ textarea {
   }
 }
 
-.form__button {
-  text-transform: uppercase;
-}
+.form {
+  &__button {
+    text-transform: uppercase;
+  }
 
-.form__error {
-  color: #c09a64;
-  font-size: 17px;
-  font-weight: 400;
+  &__error {
+    color: #c09a64;
+    font-size: 17px;
+    font-weight: 400;
+  }
 }
 
 .modal {
@@ -60,32 +62,70 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 10;
+
+  &__content {
+    max-width: 440px;
+    background: #1c1c1c;
+    padding: 40px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  &__close {
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  &__message {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 }
 
-.modal__content {
-  max-width: 440px;
-  background: #1c1c1c;
-  padding: 40px;
-  text-align: center;
-  line-height: 50px;
+//-----------------------media--------------------
+
+@media (max-width: 1400px) {
+  .form__block {
+    padding: 50px 40px;
+  }
 }
 
-.modal__close {
-  padding: 20px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  color: #fff;
-  font-size: 40px;
-  cursor: pointer;
-  border: none;
-  background: none;
+@media (max-width: 1200px) {
+  .form__input,
+  .form__button,
+  .form__text-area {
+    width: 350px;
+  }
 }
 
-.modal__message {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 20px;
+@media (max-width: 576px) {
+  .form__block {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form__input,
+  .form__button,
+  .form__text-area {
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form__input,
+  .form__button,
+  .form__text-area {
+    width: 100%;
+  }
 }

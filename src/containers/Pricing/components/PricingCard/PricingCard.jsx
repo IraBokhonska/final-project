@@ -27,13 +27,6 @@ const PricingCard = ({ image, name, price = "from $30/hour", description }) => {
             Learn more
           </p>
         </Link>
-        {/* <Button
-          type="secondary"
-          onClick={() => navigate("/categories")}
-          data-testid="view-details-button"
-        >
-          VIEW DETAILS
-        </Button> */}
       </div>
     </li>
   );

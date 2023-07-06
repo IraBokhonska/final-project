@@ -11,7 +11,7 @@ const fetchImg = (request, page) => {
       key: apiKeyPixabay,
       image_type: "photo",
       orientation: "vertical",
-      per_page: 9,
+      per_page: 12,
       page: page,
     },
   });

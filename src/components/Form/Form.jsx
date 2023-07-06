@@ -88,6 +88,7 @@ function Form() {
             },
           })}
           placeholder="Leave your message"
+          className="form__text-area"
         ></textarea>
         <div className="form__error">
           {errors?.text && <p>{errors?.text?.message || "Error!"}</p>}

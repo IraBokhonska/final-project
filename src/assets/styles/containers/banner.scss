@@ -9,11 +9,13 @@
     min-height: 280px;
     padding: 10px;
     margin: 120px 150px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
+
     animation: slideIn 5s infinite;
   }
 
@@ -36,12 +38,6 @@
     object-fit: cover;
   }
 
-  &.animated {
-    &__block {
-      animation-play-state: paused;
-    }
-  }
-
   @keyframes slideIn {
     0% {
       transform: translateX(-100%);
@@ -54,5 +50,16 @@
       transform: translateX(0);
       opacity: 1;
     }
+  }
+}
+
+//-----------media-------------
+
+@media (max-width: 768px) {
+  .banner__block {
+    max-width: 580px;
+    min-height: 280px;
+    padding: 10px;
+    margin: 80px 30px;
   }
 }

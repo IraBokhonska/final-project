@@ -1,11 +1,9 @@
 //assets
 import "../../assets/styles/components/contacts.scss";
-import contactsImage from "../../assets/images/containers/footer/fon-contacts.jpg";
 
 function Contacts() {
   return (
     <address className="footer__contacts address">
-      <img src={contactsImage} alt="сontactsImage" className="footer__image" />
       <div className="footer__address address__item">
         <h3 className="address__title">Address</h3>
         <div className="address__block">

@@ -17,12 +17,24 @@ import PortfolioCard from "./components/PortfolioCard";
 import Slider from "../../components/Slider";
 
 function Portfolio() {
+  const breakpoints = {
+    992: {
+      slidesPerView: 3,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  };
   return (
     <section className="portfolio container">
       <h2 className="portfolio__title title">Portfolio</h2>
       <div className="divider"></div>
       <p className="portfolio__subtitle subtitle">EVERY PHOTOSHOOT IS ART.</p>
-      <Slider slidesPerView={3}>
+      <Slider slidesPerView={3} breakpoints={breakpoints}>
         <Swiper>
           <SwiperSlide>
             <PortfolioCard photo={portfolioFirst} />
