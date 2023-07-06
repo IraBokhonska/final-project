@@ -1,7 +1,7 @@
 .footer {
   &__contacts {
     max-width: 570px;
-    min-height: 750px;
+    max-height: 750px;
     padding: 60px 30px;
 
     display: flex;
@@ -100,6 +100,12 @@
   .address {
     width: 100%;
     max-width: 570px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__contacts {
+    padding: 40px 30px;
   }
 }
 

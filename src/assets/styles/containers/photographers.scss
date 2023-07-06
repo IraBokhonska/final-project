@@ -113,6 +113,22 @@
   }
 }
 
+@media (max-width: 576px) {
+  .photographers {
+    &__block {
+      min-height: 520px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .photographers {
+    &__block {
+      min-height: 550px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .photographers {
     &__card {

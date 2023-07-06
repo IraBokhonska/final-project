@@ -78,6 +78,8 @@
   font-size: 30px;
   line-height: 35px;
 
+  white-space: nowrap;
+
   &:hover {
     color: #c09a64;
     transition: 0.3s;
@@ -161,11 +163,6 @@
 
       flex-direction: column;
       align-items: flex-start;
-    }
-
-    &__socials {
-      margin-right: 0;
-      align-self: flex-end;
     }
   }
 }

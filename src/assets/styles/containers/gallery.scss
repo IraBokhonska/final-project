@@ -140,6 +140,10 @@
 
 @media (max-width: 768px) {
   .gallery {
+    &__modal {
+      z-index: 11;
+    }
+
     &__photo {
       height: 400px;
     }

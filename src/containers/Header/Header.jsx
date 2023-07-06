@@ -39,7 +39,7 @@ function Header() {
             </Link>
           ))}
         </nav>
-        <div className="header__socials">
+        <div className="header__socials general-socials">
           <span className="header__socials-item">
             <a
               href="https://www.facebook.com/"
