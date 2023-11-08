@@ -1,5 +1,7 @@
 import "../../assets/styles/components/contacts.scss";
 
+import fonContacts from "../../assets/images/containers/footer/fon-contacts.jpg";
+
 function Contacts() {
   return (
     <address className="footer__contacts address">
@@ -27,6 +29,7 @@ function Contacts() {
         <h3 className="address__title">Phone</h3>
         <a href="tel: +3 (8097) 122 15 49">+3 (8097) 122 15 49</a>
       </div>
+      <img className="footer__image" src={fonContacts} alt="img" />
     </address>
   );
 }

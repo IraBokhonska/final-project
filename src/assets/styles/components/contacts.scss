@@ -1,7 +1,6 @@
 .footer {
   &__contacts {
     max-width: 570px;
-    max-height: 750px;
     padding: 60px 30px;
 
     display: flex;
@@ -20,8 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    opacity: 0.8;
+    opacity: 0.2;
   }
 }
 
