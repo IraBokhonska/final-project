@@ -2,15 +2,12 @@ import React from "react";
 
 import PricingCard from "./components/PricingCard";
 
-//assets
 import "../../assets/styles/containers/pricing.scss";
-
 import photoFirst from "../../assets/images/containers/pricing/photo1.jpg";
 import photoSecond from "../../assets/images/containers/pricing/photo2.jpg";
 import photoThird from "../../assets/images/containers/pricing/photo3.jpg";
 import photoFourth from "../../assets/images/containers/pricing/photo4.jpg";
 
-// import ../../assets/styles/components/weather-card.scss;
 function Pricing() {
   return (
     <section className="pricing container" id="pricing">

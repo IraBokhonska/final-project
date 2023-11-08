@@ -1,10 +1,9 @@
-//assets
+import { Link } from "react-router-dom";
+
+import Button from "../../elements/Button";
+
 import "../../assets/styles/containers/about-us.scss";
 import aboutUsImage from "../../assets/images/containers/about-us/about-us-image.jpg";
-
-//elements
-import Button from "../../elements/Button";
-import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (

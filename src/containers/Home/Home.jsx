@@ -1,10 +1,9 @@
-//assets
-import "../../assets/styles/containers/home.scss";
-import homeImage from "../../assets/images/containers/home/home-image.jpg";
 import { Link } from "react-router-dom";
 
-//elements
 import Button from "../../elements/Button";
+
+import homeImage from "../../assets/images/containers/home/home-image.jpg";
+import "../../assets/styles/containers/home.scss";
 
 function Home() {
   return (

@@ -11,9 +11,7 @@
       opacity: 0.8;
     }
   }
-}
 
-.home {
   &__block {
     max-width: 590px;
     min-height: 400px;
@@ -101,8 +99,13 @@
 
 @media (max-width: 480px) {
   .home {
+    max-height: fit-content;
     &__block {
       gap: 20px;
+    }
+
+    .bg-image {
+      min-height: 450px;
     }
   }
 }

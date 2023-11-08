@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// assets
 import "../../assets/styles/elements/button.scss";
 
 function Button({

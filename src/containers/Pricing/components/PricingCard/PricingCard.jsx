@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// elements
-// import Button from "../../elements/Button";
-
-// assets
 import "../../../../assets/styles/containers/pricing.scss";
 
 const PricingCard = ({ image, name, price = "from $30/hour", description }) => {

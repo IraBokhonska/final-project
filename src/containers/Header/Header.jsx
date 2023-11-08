@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF } from "react-icons/fa";
-import { SlSocialInstagram } from "react-icons/sl";
-import { IoLogoYoutube, IoMdCamera } from "react-icons/io";
+
 import { HEADER_NAVIGATION_LINKS } from "./constans";
+
+import Socials from "../../components/Socials/Socials";
+
+import { IoMdCamera } from "react-icons/io";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-// assets
 import "../../assets/styles/containers/header.scss";
 
 function Header() {
@@ -39,35 +40,7 @@ function Header() {
             </Link>
           ))}
         </nav>
-        <div className="header__socials general-socials">
-          <span className="header__socials-item">
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FaFacebookF />
-            </a>
-          </span>
-          <span className="header__socials-item">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <SlSocialInstagram />
-            </a>
-          </span>
-          <span className="header__socials-item">
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IoLogoYoutube />
-            </a>
-          </span>
-        </div>
+        <Socials />
         <div
           onClick={toggleNav}
           className={`mobile_btn ${nav ? "active" : ""}`}

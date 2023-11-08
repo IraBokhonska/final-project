@@ -1,6 +1,7 @@
 import { Swiper } from "swiper/react";
 import { Navigation, Pagination, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
+
 import "../../assets/styles/components/slider.scss";
 
 function Slider({ children, slidesPerView, breakpoints }) {

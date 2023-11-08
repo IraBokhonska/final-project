@@ -1,15 +1,12 @@
 import React from "react";
 
-//assets
-import "../../assets/styles/containers/services.scss";
+import Card from "../../components/Card";
 
+import "../../assets/styles/containers/services.scss";
 import Portraits from "../../assets/images/icons/portraits.svg";
 import Family from "../../assets/images/icons/family.svg";
 import Advetising from "../../assets/images/icons/advertising.svg";
 import Events from "../../assets/images/icons/events.svg";
-
-//components
-import Card from "../../components/Card";
 
 function Services() {
   return (
@@ -25,7 +22,7 @@ function Services() {
           title="Portraits"
           text="Setting the right accents in
         beautiful portraits."
-        preferences={[]}
+          preferences={[]}
         />
         <Card
           icon={Family}

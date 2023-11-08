@@ -1,4 +1,3 @@
-//assets
 import "../../assets/styles/components/contacts.scss";
 
 function Contacts() {

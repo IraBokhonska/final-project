@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// assets
-import "../../assets/styles/components/card.scss";
-
-// elements
 import Button from "../../elements/Button";
+
+import "../../assets/styles/components/card.scss";
 
 const Card = ({ icon, title, text, preferences }) => {
   return (

@@ -1,14 +1,11 @@
 import React from "react";
 
-// assets
-import "../../assets/styles/containers/why-us.scss";
+import Card from "../../components/Card";
 
+import "../../assets/styles/containers/why-us.scss";
 import Experience from "../../assets/images/icons/experience.svg";
 import Equipment from "../../assets/images/icons/equipment.svg";
 import Professional from "../../assets/images/icons/professional.svg";
-
-// components
-import Card from "../../components/Card";
 
 function WhyUs() {
   return (

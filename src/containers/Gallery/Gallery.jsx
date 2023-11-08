@@ -1,22 +1,18 @@
 import { useState, useEffect } from "react";
 import fetchImg from "../../api/axios";
-import "../../assets/styles/containers/gallery.scss";
+
+import Button from "../../elements/Button";
 
 import { FaRegRectangleXmark } from "react-icons/fa6";
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from "react-icons/tfi";
 
-//elements
-import Button from "../../elements/Button";
+import "../../assets/styles/containers/gallery.scss";
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
   const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    fetchImages("fashion", page);
-  }, [page]);
 
   const fetchImages = async (query, page) => {
     try {
@@ -32,6 +28,10 @@ const Gallery = () => {
       console.error("Error fetching images:", error);
     }
   };
+
+  useEffect(() => {
+    fetchImages("fashion", page);
+  }, [page]);
 
   const loadMoreImages = () => {
     setPage((prevPage) => prevPage + 1);

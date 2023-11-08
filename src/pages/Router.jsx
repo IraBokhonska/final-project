@@ -1,14 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-//pages
-
 import HomePage from "./HomePage";
 import ServicesPage from "./ServicesPage";
 import GalleryPage from "./GalleryPage";
-
-//layouts
-
 import GeneralLayout from "../layouts/GeneralLayout";
 import AdditionalLayout from "../layouts/AdditionalLayout";
 

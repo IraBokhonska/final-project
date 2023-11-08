@@ -1,9 +1,7 @@
-//assets
+import CollaborationCard from "./components/CollaborationCard";
+
 import "../../assets/styles/containers/collaboration.scss";
 import collaborationImage from "../../assets/images/containers/collaboration/collaboration-image.jpg";
-
-//components
-import CollaborationCard from "./components/CollaborationCard";
 
 function Collaboration() {
   return (

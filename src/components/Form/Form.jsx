@@ -1,12 +1,9 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
-//assets
-import "../../assets/styles/components/form.scss";
-import "../../assets/styles/components/form.scss";
+import Modal from "../Modal";
 
-//elements
-// import Button from "../../elements/Button";
+import "../../assets/styles/components/form.scss";
 
 function Form() {
   const [showModal, setShowModal] = useState(false);
@@ -22,10 +19,6 @@ function Form() {
     console.log(JSON.stringify(data));
     reset();
     setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
   };
 
   return (
@@ -97,18 +90,7 @@ function Form() {
           Request a quote
         </button>
       </form>
-      {showModal && (
-        <div className="modal">
-          <div className="modal__content">
-            <button className="modal__close" onClick={closeModal}>
-              &times;
-            </button>
-            <p className="modal__message">
-              Thank you for your inquiry. We will contact you shortly!
-            </p>
-          </div>
-        </div>
-      )}
+      {showModal && <Modal setShowModal={setShowModal} />}
     </div>
   );
 }

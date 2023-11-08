@@ -17,6 +17,10 @@
     gap: 15px;
 
     animation: slideIn 5s infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 
   &__description {

@@ -1,9 +1,7 @@
 import React from "react";
 
-// containers
 import Header from "../containers/Header";
 
-// assets
 import "../assets/styles/layouts/general-layouts.scss";
 
 function AdditionalLayout({ children }) {

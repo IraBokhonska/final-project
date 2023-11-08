@@ -1,4 +1,3 @@
-//containers
 import Home from "../../containers/Home";
 import AboutUs from "../../containers/AboutUs";
 import Photographers from "../../containers/Photographers";

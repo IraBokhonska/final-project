@@ -1,10 +1,9 @@
 import React from "react";
-// assets
-import "../../assets/styles/containers/footer.scss";
 
-//components
 import Contacts from "../../components/Contacts";
 import Form from "../../components/Form";
+
+import "../../assets/styles/containers/footer.scss";
 
 function Footer() {
   return (

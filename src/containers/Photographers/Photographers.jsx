@@ -1,16 +1,13 @@
 import { SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 
-//assets
-import "../../assets/styles/containers/photographers.scss";
+import PhotographerCard from "./components/PhotographerCard";
+import Slider from "../../components/Slider";
 
+import "../../assets/styles/containers/photographers.scss";
 import photographerFirst from "../../assets/images/containers/photographers/photographer-1.jpg";
 import photographerSecond from "../../assets/images/containers/photographers/photographer-2.jpg";
 import photographerThird from "../../assets/images/containers/photographers/photographer-3.jpg";
-
-//components
-import PhotographerCard from "./components/PhotographerCard";
-import Slider from "../../components/Slider";
 
 function Photographers() {
   return (

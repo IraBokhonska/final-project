@@ -1,10 +1,8 @@
-//asserts
-import bannerServices from "../../assets/images/containers/banners/banner-2.jpg";
-
-//containers
 import Banner from "../../containers/Banner";
 import Pricing from "../../containers/Pricing";
 import Services from "../../containers/Services";
+
+import bannerServices from "../../assets/images/containers/banners/banner-2.jpg";
 
 function ServicesPage() {
   return (

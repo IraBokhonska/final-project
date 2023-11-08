@@ -1,10 +1,8 @@
 import React from "react";
 
-// containers
 import Header from "../containers/Header";
 import Footer from "../containers/Footer";
 
-// assets
 import "../assets/styles/layouts/general-layouts.scss";
 
 function GeneralLayout({ children }) {
