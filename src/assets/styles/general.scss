@@ -68,6 +68,8 @@ body {
   line-height: 29px;
 }
 
+//---------------------------media---------------------------------
+
 @media (max-width: 1400px) {
   .container {
     width: 100%;
@@ -92,12 +94,17 @@ body {
     gap: 50px;
   }
   .container {
-    padding: 0 20px;
+    padding: 0;
   }
   .text {
     font-size: 15px;
   }
+
+  .title {
+    padding: 0 20px;
+  }
   .subtitle {
     margin-bottom: 30px;
+    padding: 0 20px;
   }
 }

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import { HEADER_NAVIGATION_LINKS } from "./constans";
 
-import Socials from "../../components/Socials/Socials";
+import Socials from "../../components/Socials";
+import Logo from "../../components/Logo";
 
-import { IoMdCamera } from "react-icons/io";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import "../../assets/styles/containers/header.scss";
@@ -20,14 +20,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__container">
-        <div className="header__logo-menu">
-          <Link to="/" className="logo">
-            <span className="logo-icon">
-              <IoMdCamera />
-            </span>
-            <p className="logo-name">Just a moment</p>
-          </Link>
-        </div>
+        <Logo />
         <nav className={`header__navigation ${nav ? "active-menu" : ""}`}>
           {HEADER_NAVIGATION_LINKS.map((link, index) => (
             <Link
