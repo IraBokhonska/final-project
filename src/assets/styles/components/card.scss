@@ -11,7 +11,7 @@
 
   font-weight: 700;
 
-  background-color: #1c1c1c;
+  background-color: $light-black;
 
   &__icon svg {
     width: 70px;
@@ -23,7 +23,7 @@
     white-space: nowrap;
 
     font-family: Playfair Display, sans-serif;
-    color: #ffffff;
+    color: $white;
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
@@ -62,7 +62,7 @@
     align-items: flex-start;
     gap: 30px;
 
-    &__text{
+    &__text {
       min-height: 87px;
     }
   }
@@ -70,7 +70,7 @@
 
 @media (max-width: 650px) {
   .card {
-    &__text{
+    &__text {
       min-height: 58px;
     }
   }

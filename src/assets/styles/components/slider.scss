@@ -2,10 +2,10 @@
   width: 50px;
   height: 3px;
   border-radius: 25%;
-  background-color: #ffffff;
+  background-color: $white;
 
   &:hover {
-    color: #c09a64;
+    color: $light-brown;
     transition: 0.3s;
   }
 }
@@ -13,7 +13,7 @@
 .swiper-button-next,
 .swiper-button-prev,
 .swiper-button-disabled {
-  color: #ffffff;
+  color: $white;
   opacity: 0.35;
 }
 

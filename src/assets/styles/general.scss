@@ -1,3 +1,4 @@
+//-------------------general--------------------------
 html {
   scroll-behavior: smooth;
 }
@@ -6,11 +7,11 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: #111111;
+  background-color: $black;
 
   font-family: PT Sans, sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $white;
   font-size: 22px;
   letter-spacing: 2px;
 }
@@ -20,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 100px;
+  @include adaptiveValue("gap", 100, 30, 1);
 }
 
 .container {
@@ -45,7 +47,7 @@ body {
 
   font-family: Playfair Display, sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: $white;
   font-size: 45px;
   line-height: 59px;
   letter-spacing: 2px;
@@ -53,7 +55,7 @@ body {
 }
 
 .subtitle {
-  margin-bottom: 50px;
+  @include adaptiveValue("margin-bottom", 50, 25, 1);
 
   color: #bababa;
   text-align: center;
@@ -63,7 +65,7 @@ body {
 }
 
 .text {
-  color: #b8b8b8;
+  color: $grey;
   font-size: 17px;
   line-height: 29px;
 }
@@ -78,9 +80,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main__wrapper {
-    gap: 80px;
-  }
   .container {
     padding: 0 40px;
   }
@@ -90,9 +89,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .main__wrapper {
-    gap: 50px;
-  }
   .container {
     padding: 0;
   }
@@ -100,11 +96,8 @@ body {
     font-size: 15px;
   }
 
-  .title {
-    padding: 0 20px;
-  }
+  .title,
   .subtitle {
-    margin-bottom: 30px;
     padding: 0 20px;
   }
 }

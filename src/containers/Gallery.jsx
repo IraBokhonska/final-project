@@ -33,10 +33,10 @@ const Gallery = () => {
 
   useEffect(() => {
     fetchImages("fashion", page);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-    // setIsLoading(false);
+    // setTimeout(() => {
+    //   setIsLoading(false);
+    // }, 5000);
+    setIsLoading(false);
   }, [page]);
 
   const loadMoreImages = () => {

@@ -4,7 +4,7 @@
 
   font-family: PT Sans;
   font-weight: 700;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   font-size: 12px;
   line-height: 14px;
@@ -15,7 +15,7 @@
   cursor: pointer;
 
   &_type-primary {
-    background-color: #c09a64;
+    background-color: $light-brown;
     opacity: 0.8;
     &:hover {
       transition: 0.3s;
@@ -28,7 +28,7 @@
     border: 1px solid #6c6c6c;
     &:hover {
       transition: 0.3s;
-      background-color: #c09a64;
+      background-color: $light-brown;
     }
   }
 }

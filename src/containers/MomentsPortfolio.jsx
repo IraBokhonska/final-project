@@ -31,20 +31,3 @@ export const MomentsPortfolio = () => {
     />
   );
 };
-
-// export const FashionPortfolio = () => {
-//   return (
-//     <Portfolio
-//       title="Portfolio"
-//       subtitle="EVERY PHOTOSHOOT IS ART."
-//       portfolioImages={[
-//         portfolioFirst,
-//         portfolioSecond,
-//         portfolioThird,
-//         portfolioFourth,
-//         portfolioFifth,
-//         portfolioSixth,
-//       ]}
-//     />
-//   );
-// };

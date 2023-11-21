@@ -4,7 +4,7 @@
 
   &__container {
     padding: 50px 70px;
-    color: #fff;
+    color: $white;
 
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@
     line-height: 20px;
 
     &:hover {
-      color: #c09a64;
+      color: $light-brown;
       transition: 0.3s;
     }
   }
@@ -49,7 +49,7 @@
   white-space: nowrap;
 
   &:hover {
-    color: #c09a64;
+    color: $light-brown;
     transition: 0.3s;
   }
 }
@@ -100,7 +100,7 @@
       bottom: 0;
       z-index: 10;
 
-      background-color: #1c1c1c;
+      background-color: $light-black;
       transition: left 1s;
     }
 
@@ -119,7 +119,7 @@
 
       &:hover {
         transition: 0.3s;
-        color: #c09a64;
+        color: $light-brown;
       }
     }
   }

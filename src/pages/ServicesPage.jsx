@@ -10,7 +10,7 @@ function ServicesPage() {
     <div className="main__wrapper">
       <Banner
         title="Schedule Your Shooting"
-        description="CONTACT US NOW AND GET A 10% DISCOUNT FOR THE NEXT FASHION PHOTOSHOOT."
+        description="GET A 10% DISCOUNT FOR THE NEXT FASHION PHOTOSHOOT."
         image={bannerServices}
       />
       <Services />

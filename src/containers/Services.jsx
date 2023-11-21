@@ -1,12 +1,37 @@
 import React from "react";
-
 import Card from "../components/Card";
-
 import "../assets/styles/containers/services.scss";
 import Portraits from "../assets/images/icons/portraits.svg";
 import Family from "../assets/images/icons/family.svg";
-import Advetising from "../assets/images/icons/advertising.svg";
+import Advertising from "../assets/images/icons/advertising.svg";
 import Events from "../assets/images/icons/events.svg";
+
+const servicesCards = [
+  {
+    icon: Portraits,
+    title: "Portraits",
+    text: "Setting the right accents in beautiful portraits.",
+    preferences: [],
+  },
+  {
+    icon: Family,
+    title: "Family photos",
+    text: "Catching the brightest moments of your family.",
+    preferences: [],
+  },
+  {
+    icon: Advertising,
+    title: "Advertising",
+    text: "Shootings for advertising campaigns and e-commerce.",
+    preferences: [],
+  },
+  {
+    icon: Events,
+    title: "Events",
+    text: "Capturing moments of your important events.",
+    preferences: [],
+  },
+];
 
 function Services() {
   return (
@@ -17,33 +42,15 @@ function Services() {
         WE OPEN FOR NEW OPPORTUNITIES AND COLLABORATIONS.
       </p>
       <ul className="services__list">
-        <Card
-          icon={Portraits}
-          title="Portraits"
-          text="Setting the right accents in
-        beautiful portraits."
-          preferences={[]}
-        />
-        <Card
-          icon={Family}
-          title="Family photos"
-          text="Catching the brightest moments of your family."
-          preferences={[]}
-        />
-        <Card
-          icon={Advetising}
-          title="Advertising"
-          text="Shootings for advertising
-          campaigns and e-commerce."
-          preferences={[]}
-        />
-        <Card
-          icon={Events}
-          title="Events"
-          text="Capturing moments of your
-          important events."
-          preferences={[]}
-        />
+        {servicesCards.map((card, index) => (
+          <Card
+            key={`servicesCard-${index}`}
+            icon={card.icon}
+            title={card.title}
+            text={card.text}
+            preferences={card.preferences}
+          />
+        ))}
       </ul>
     </section>
   );

@@ -5,11 +5,11 @@ import { IoMdCamera } from "react-icons/io";
 
 function Logo() {
   return (
-    <Link to="/" className="logo">
+    <Link className="logo" onClick={() => (window.location.href = "#header")}>
       <span className="logo-icon">
         <IoMdCamera />
       </span>
-      <p className="logo-name">Just a moment</p>
+      <p className="logo-name">Just Moment</p>
     </Link>
   );
 }

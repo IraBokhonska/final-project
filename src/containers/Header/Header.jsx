@@ -18,7 +18,7 @@ function Header() {
   };
 
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="header__container">
         <Logo />
         <nav className={`header__navigation ${nav ? "active-menu" : ""}`}>

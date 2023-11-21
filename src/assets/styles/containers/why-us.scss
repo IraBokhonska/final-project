@@ -34,7 +34,7 @@
 
         display: inline-block;
         border-radius: 50%;
-        background-color: #c09a64;
+        background-color: $light-brown;
       }
     }
 
@@ -81,7 +81,7 @@
 @media (max-width: 480px) {
   .why-us {
     padding: 0;
-    
+
     &__list {
       gap: 20px;
     }

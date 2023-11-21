@@ -3,6 +3,29 @@ import CollaborationCard from "./components/CollaborationCard";
 import "../../assets/styles/containers/collaboration.scss";
 import collaborationImage from "../../assets/images/containers/collaboration/collaboration-image.jpg";
 
+const collaborationCards = [
+  {
+    number: "01",
+    title: "Contact US",
+    text: "You can call or write us, or simply fill out the contact form on this website.",
+  },
+  {
+    number: "02",
+    title: "Choose the date",
+    text: "Indicate where the shooting will take place, specify the preferred date and exact time.",
+  },
+  {
+    number: "03",
+    title: "Take care of the details",
+    text: "Make sure that the studio is rented, models are booked and there's everything necessary for the shooting.",
+  },
+  {
+    number: "04",
+    title: "Get the perfect photos!",
+    text: "All photos will be ready in a maximum of 2 months if you need retouch services.",
+  },
+];
+
 function Collaboration() {
   return (
     <section className="collaboration container">
@@ -20,30 +43,14 @@ function Collaboration() {
           />
         </div>
         <ul className="collaboration__list">
-          <CollaborationCard
-            number="01"
-            title="Contact US"
-            text="You can call or write us, or simply fill out the contact form on
-        this website."
-          />
-          <CollaborationCard
-            number="02"
-            title="Choose the date"
-            text="Indicate where the shooting will take place, specify the
-          preferred date and exact time."
-          />
-          <CollaborationCard
-            number="03"
-            title="Take care of the details"
-            text="Make sure that the studio is rented, models are booked and
-          there's everything necessary for the shooting."
-          />
-          <CollaborationCard
-            number="04"
-            title="Get the perfect photos!"
-            text="All photos will be ready in a maximum of 2 months if you
-          need retouch services."
-          />
+          {collaborationCards.map((card, index) => (
+            <CollaborationCard
+              key={`collaborationCard-${index}`}
+              number={card.number}
+              title={card.title}
+              text={card.text}
+            />
+          ))}
         </ul>
       </div>
     </section>

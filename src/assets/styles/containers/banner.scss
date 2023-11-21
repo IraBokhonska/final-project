@@ -24,7 +24,7 @@
   }
 
   &__description {
-    color: #fff;
+    color: $white;
     text-align: center;
     font-size: 24px;
     font-family: "PT Sans", sans-serif;
@@ -61,9 +61,16 @@
 
 @media (max-width: 768px) {
   .banner__block {
-    max-width: 580px;
-    min-height: 280px;
-    padding: 10px;
     margin: 80px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 470px;
+
+    &__block {
+      margin: 40px 10px;
+    }
   }
 }

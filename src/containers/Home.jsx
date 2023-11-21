@@ -8,12 +8,9 @@ import "../assets/styles/containers/home.scss";
 function Home() {
   return (
     <section className="home">
-      <div className="home__image">
-        <img src={homeImage} alt="img" className="bg-image" />
-      </div>
       <div className="home__block">
         <p className="home__studio">studio</p>
-        <h1 className="home__title">Just a Moment</h1>
+        <h1 className="home__title">Just Moment</h1>
         <div className="divider"></div>
         <p className="home__subtitle">
           We capture the most beautiful moments of your life...
@@ -27,6 +24,9 @@ function Home() {
             CONTACT US
           </Button>
         </Link>
+      </div>
+      <div className="home__image">
+        <img src={homeImage} alt="img" className="home-image" />
       </div>
     </section>
   );

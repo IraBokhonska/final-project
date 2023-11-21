@@ -18,10 +18,10 @@ function AboutUs() {
           We love people, we love nature, we love world...
         </p>
         <p className="about-us__text text">
-          Just a Moment was created in 2017 by talented young photographers. Two
+          Just Moment was created in 2017 by talented young photographers. Two
           friends, sitting in a cozy Lviv cafe discussing plans for the future,
           never imagined that their small dream would become a grandiose
-          project. Just a Moment is not just a photo studio, it's a new horizon
+          project. Just Moment is not just a photo studio, it's a new horizon
           for your vision. 
         </p>
         <p className="about-us__text text">

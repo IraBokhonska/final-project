@@ -1,10 +1,12 @@
 .footer {
   width: 100%;
-  background: linear-gradient(0deg, #ffecd1 0%, #c09a64 100%);
+  background: linear-gradient(0deg, #ffecd1 0%, $light-brown 100%);
 
   &__main {
     max-width: 1440px;
-    padding: 100px 135px;
+    padding: 0 135px;
+    @include adaptiveValue("padding-top", 100, 30, 1);
+    @include adaptiveValue("padding-bottom", 100, 30, 1);
 
     display: flex;
     flex-direction: row;
@@ -13,7 +15,8 @@
     margin: 0 auto;
 
     @media (max-width: 1300px) {
-      padding: 100px 80px;
+      padding-left: 80px;
+      padding-right: 80px;
     }
 
     @media (max-width: 992px) {
@@ -23,17 +26,18 @@
     }
 
     @media (max-width: 778px) {
-      padding: 80px 40px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 480px) {
       padding: 0;
     }
   }
 
   .divider {
     height: 0.5px;
-    color: #b8b8b8;
+    color: $grey;
   }
 }
 
@@ -49,12 +53,12 @@
   gap: 20px;
   align-items: center;
 
-  background-color: #111;
+  background-color: $black;
 
   &__item {
     font-size: 14px;
     line-height: 14px;
-    color: #b8b8b8;
+    color: $grey;
   }
 
   @media (min-width: 576px) {
