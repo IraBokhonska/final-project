@@ -20,7 +20,7 @@ function Header() {
   return (
     <header className="header" id="header">
       <div className="header__container">
-        <Logo />
+        <Logo onClickFooter={() => (window.location.href = "/")} />
         <nav className={`header__navigation ${nav ? "active-menu" : ""}`}>
           {HEADER_NAVIGATION_LINKS.map((link, index) => (
             <Link
