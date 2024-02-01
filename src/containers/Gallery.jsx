@@ -75,9 +75,8 @@ const Gallery = () => {
           <Skeletons />
         ) : (
           images.map((item) => (
-            <div className="gallery__photo">
+            <div className="gallery__photo" key={item.id}>
               <img
-                key={item.id}
                 src={item.webformatURL}
                 alt={item.tags}
                 className="photo"

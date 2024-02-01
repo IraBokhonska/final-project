@@ -53,7 +53,15 @@ function WhyUs() {
             icon={card.icon}
             title={card.title}
             text={card.text}
-            preferences={card.preferences}
+            preferences={
+              <ul className="card-preferences__list">
+                {card.preferences.map((preference, index) => (
+                  <li className="card-preferences__item text" key={index}>
+                    {preference}
+                  </li>
+                ))}
+              </ul>
+            }
           />
         ))}
       </ul>

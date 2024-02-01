@@ -11,25 +11,21 @@ const servicesCards = [
     icon: Portraits,
     title: "Portraits",
     text: "Setting the right accents in beautiful portraits.",
-    preferences: [],
   },
   {
     icon: Family,
     title: "Family photos",
     text: "Catching the brightest moments of your family.",
-    preferences: [],
   },
   {
     icon: Advertising,
     title: "Advertising",
     text: "Shootings for advertising campaigns and e-commerce.",
-    preferences: [],
   },
   {
     icon: Events,
     title: "Events",
     text: "Capturing moments of your important events.",
-    preferences: [],
   },
 ];
 
@@ -48,7 +44,6 @@ function Services() {
             icon={card.icon}
             title={card.title}
             text={card.text}
-            preferences={card.preferences}
           />
         ))}
       </ul>
